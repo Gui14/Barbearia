@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop - Vagas</title>
+    <link rel="icon" href="Imagens/foto_perfil.jpg">
+    <link rel="stylesheet" href="vagas.css">
+</head>
+<body>
+    <div>
+        <header id="boxtitle">
+            <tr>
+                <td ><a href="index.html" class="links">HOME</a></td>
+                <td>
+                    <a  href="vagas.html" class="links">VAGAS</a>
+                </td> 
+                <td>
+                    <a  href="shop.html" class="links" >SHOP</a>
+                </td> 
+                <td>
+                    <a  href="" class="links">SOBRE</a>
+                </td> 
+            </tr>
+        </header>
+    </div>
+    <div id="divprinci">  
+        <div id="disponivel">
+            <h4 id="text1">Horários disponíveis</h4>
+            <br>
+            <h5 id="text2">Escolha um dia para ver os horários disponíveis</h5>
+            <input type="date" name="datadisp" class="data2" id="data2" >
+            <input type="button" value="Procurar" onclick="mudardia()" id="procurar">
+            <br>
+            <br>
+            <div id="disponibilidade">
+                <span id="80" class="oito" >8:00</span>
+                <span id="150" class="nove">15:00</span>
+                <br>
+                <br>
+                <span id="90" class="oito" >9:00</span>
+                <span id="160" class="nove">16:00</span>
+                <br>
+                <br>
+                <span id="100"class="oito" >10:00</span>
+                <span id="170" class="nove">17:00</span>
+                <br>
+                <br>
+                <span id="110"class="oito" >11:00</span>
+                <span id="180" class="nove">18:00</span>
+                <br>
+                <br>
+                <span id="140"class="oito" >14:00</span>
+                <span id="190" class="nove">19:00</span>
+            </div>
+
+        </div>  
+        <div id="box">
+            <div id="perguntas">
+                <form action="">
+                    <h4 class="corte">Escreva seu nome</h4>
+                    <input type="text" name="nome"  class="select" id="nome">
+                    <br>
+                    <h4 class="corte">Selecione o corte:</h4>
+                    <select name="corte" id="corte" class="select">
+                        <option value="6"> </option>
+                        <option value="Corte">Corte</option>
+                        <option value="Barba">Barba</option>
+                        <option value="Corte e barba">Corte e barba</option>
+                        <option value="corte e sobrancelha">Corte e sobrancelha</option>
+                        <option value="corte, barba e sobrancelha">Corte, barba e sobrancelha</option>
+                    </select>
+                    <br>
+                    <h4 class="corte">Data</h4>
+                    <input type="date" name="data" class="select" id="data">
+                    <br>
+                    <h4 class="corte">Horário:</h4>
+                    <select name="corte" class="select" id="horario">
+                        <option value="n"> </option>
+                        <option value="8">8:00</option>
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                    </select>
+                    <br>
+                    <input id="agendarbtn" type="button" value="Agendar" onclick="agendar()">
+                </form>
+            </div>
+        </div>
+        <div id="valor">
+            <h4 id="valores">Valores</h4>
+            <div id="valores2">
+                <p class="infovalor">Corte</p>
+                <p class="infovalor">R$ 00,00</p>
+                <p class="infovalor">Barba</p>
+                <p class="infovalor">R$ 00,00</p>
+                <p class="infovalor">Corte e barba</p>
+                <p class="infovalor">R$ 00,00</p>
+                <p class="infovalor">Corte e sobrancelha</p>
+                <p class="infovalor">R$ 00,00</p>
+                <p class="infovalor">Corte, sobrancelha e barba</p>
+                <p class="infovalor">R$ 00,00</p>
+            </div>    
+        </div>
+        <!-- <div id="agendamentos">
+            <h2>Agendamentos</h2>
+          </div> -->
+
+    </div>    
+	<script src="scriptvagas.js"></script>        
+</body>
+</html>
